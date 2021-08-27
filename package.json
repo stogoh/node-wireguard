@@ -1,0 +1,42 @@
+{
+  "name": "node-wireguard",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "lint": "eslint src/**/*.ts",
+    "lint-fix": "eslint --fix src/**/*.ts"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "wireguard",
+    "wg",
+    "vpn",
+    "tunnel",
+    "wrapper"
+  ],
+  "author": "stogoh",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/stogoh/node-wireguard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stogoh/node-wireguard.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.26.0",
+    "mocha": "^8.4.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.1.3"
+  }
+}
